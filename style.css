@@ -1,73 +1,78 @@
-/* style.css */
+/* Modern Task Manager Style */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #E3F2FD;
+    text-align: center;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
-    background: white;
+    width: 90%;
+    max-width: 400px;
+    background: #F8F9FA;
     padding: 20px;
+    margin: 50px auto;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    margin-bottom: 10px;
-    font-size: 24px;
+    color: #333;
 }
 
-input {
-    width: 80%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+/* Add spacing between input and button */
+.input-container {
+    display: flex;
+    gap: 10px; /* Adds space between input and button */
+    margin-bottom: 15px; /* Adds space below the input section */
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 button {
-    background-color: #28a745;
-    color: white;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border: none;
+    background: #007bff;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #218838;
+    background: #0056b3;
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 li {
-    background: #ddd;
-    padding: 8px;
-    margin: 5px 0;
+    background: #37474F;
+    color: #E3F2FD;
+    padding: 10px;
+    margin-top: 10px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.delete-btn {
-    background: red;
-    color: white;
-    border: none;
-    padding: 5px 8px;
-    cursor: pointer;
-    border-radius: 3px;
+li button {
+    background: #dc3545;
+    padding: 5px 10px;
+    font-size: 14px;
 }
 
-.delete-btn:hover {
-    background: darkred;
+li button:hover {
+    background: #c82333;
 }
